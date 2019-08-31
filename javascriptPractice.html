@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF" />
+    <title>Javascript Coading Practice</title>
+
+    <script>
+      /* Lets start practicing with some array methods in javascript
+         The first method is called array.form()*/
+
+         function arrayFrom() {
+          //  This method creates a new, shallow-copied array
+          // In the first example we can see that the string we are passing is returned
+          // as an array.
+          var array1 = Array.from("Krunal");
+          document.getElementById("method1a").innerHTML = array1;
+
+          // In the second example we can see that the array of numbers we are passing
+          // is returned as an array but we are performing the operations on each of its
+          // value.
+          var array2 = Array.from([1,2,3], x => x*x);
+          console.log(array2);
+          // document.getElementById("method1b").innerHTML = array2;
+         }
+
+        //  arrayFrom();
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <h4>This file is for doing javascript coding practice</h4>
+    </header>
+    <body>
+      <div>
+        <h3>This example is for <code>Array.from()</code> method</h3>
+        <p>The values we are passing here is "Krunal" in the <code>Array.from()</code>.
+          And the output of it is shown below. Click the button to see the output.
+        </p>
+        <button onclick="arrayFrom()">Click</button>
+        <p id="method1a">This</p>
+        <p>The values are passed in the array form [1,2,3] and we are performing operations
+          using the same method. Click the button to see the output.
+        </p>
+        <p id="mathod1b"></p>
+      </div>
+    </body>
+  </body>
+</html>
