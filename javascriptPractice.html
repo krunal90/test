@@ -23,6 +23,20 @@
           // document.getElementById("method1b").innerHTML = array2;
          }
 
+         function arrayOf() {
+          //array of creates a new array
+          var array = Array.of(1,2,3);
+          document.getElementById("arrayOfMethod").innerHTML = array; 
+         }
+
+        function arrayConcatnation() {
+          let arr1 = [1,2,3],
+          arr2 = [4,5,6],
+          arr3 = [7,8,9];
+
+          arr1 = arr1.concat(arr2, arr3);
+          console.log(arr1);
+        }
     </script>
 
   </head>
@@ -42,6 +56,20 @@
           using the same method. Click the button to see the output.
         </p>
         <p id="mathod1b"></p>
+      </div>
+      <hr/>
+      <div>
+        <h3>Let's get the output of the method <code>Array.of()</code></h3>
+        <p>The output for the input value 1,2,3 is <button onclick="arrayOf()">Click</button></p>
+        <p id="arrayOfMethod"></p>
+      </div>
+      <hr/>
+      <div>
+        <p>Here we will see the concatnation of the arrays for the 
+          input of three different arrays array1, array2 and array3 giving input [1,2,3]
+          , [4,5,6], [7,8,9] respectively. Click on the button to see the output in the console.
+          <button onclick="arrayConcatnation()">Click</button>
+        </p>
       </div>
     </body>
   </body>
